@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Gaussian Elimination",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-I", "include",
+                "src/main.c",
+                "src/gaussian_elimination.c",
+                "src/utils.c",
+                "-o", "build/gaussian_elimination"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compila o projeto Gaussian Elimination com todos os módulos"
+        }
+    ]
+}
